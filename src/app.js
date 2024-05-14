@@ -8,13 +8,13 @@ const yellow = "wounded";
 const red = "critical";
   
 export function viewHealth(obj) {
-    if (characted.health > 50) {
+    if (obj.health > 50) {
         return green
     };
-    if (characted.health <= 50 && characted.health >= 15) {
+    if (obj.health <= 50 && obj.health >= 15) {
         return yellow
     };
-    if (characted.health < 15) {
+    if (obj.health < 15) {
         return red
     };
 };
